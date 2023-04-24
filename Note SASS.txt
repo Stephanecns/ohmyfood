@@ -1,0 +1,43 @@
+sass/
+|
+|– abstracts/
+|   |– _variables.scss    // Déclaration des variables
+|   |– _functions.scss    // Fonctions utilitaires
+|   |– _mixins.scss       // Mixins utilitaires
+|   |– _placeholders.scss // Placeholders utilitaires
+|
+|– base/
+|   |– _reset.scss        // Reset CSS
+|   |– _typography.scss   // Règles de typographie de base
+|   |– _utilities.scss    // Classes utilitaires
+|   |– _boilerplate.scss  // Règles de base
+|
+|– components/
+|   |– _button.scss       // Styles pour les boutons
+|   |– _carousel.scss     // Styles pour le carousel
+|   |– _modal.scss        // Styles pour la fenêtre modale
+|   |– _navigation.scss   // Styles pour la navigation
+|   |– _slider.scss       // Styles pour le slider
+|
+|– layout/
+|   |– _header.scss       // Styles pour l'en-tête
+|   |– _footer.scss       // Styles pour le pied de page
+|   |– _sidebar.scss      // Styles pour la barre latérale
+|   |– _grid.scss         // Styles pour la grille
+|   |– _forms.scss        // Styles pour les formulaires
+|
+|– pages/
+|   |– _home.scss         // Styles pour la page d'accueil
+|   |– _contact.scss      // Styles pour la page de contact
+|   |– _about.scss        // Styles pour la page à propos
+|   |– _blog.scss         // Styles pour la page de blog
+|
+|– themes/
+|   |– _theme.scss        // Styles pour le thème par défaut
+|   |– _admin.scss        // Styles pour l'administration
+|
+|– vendors/
+|   |– _bootstrap.scss    // Import de Bootstrap
+|   |– _jquery-ui.scss    // Import de jQuery UI
+|
+`– style.scss             // Point d'entrée principal
