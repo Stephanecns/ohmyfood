@@ -12,31 +12,67 @@
         padding: 22px 0px 0px 25px
     }
 
-    &__logo-icon {
+    &__link-icon {
+        width: 11px;
+        height: 13px;
+        padding-right: 18px
+    }
+}
+
+//Footer Desktop
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 30px 25px;
+    gap: 16px;
+    
+
+    background: $color-background-quaternary;
+    height: 186px;
+    color: $color-secondary;
+
+    &__link-list {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 7px;
+    }
+
+    &__logo {
+        font-family: $font-family-title;
+        font-weight: $font-weight-normal;
+        font-size: $font-size-paragraph;
+        line-height: $line-height-logo;
+
+        position: relative;
+        top: 57px;
+        left: 1276px;
+        gap: 10px;
+        
+    }
+
+    &__link-icon {
         width: 11px;
         height: 13px;
         padding-right: 18px
     }
 
 
-
 }
 
 /*<footer class="footer">
-  
-<div class="footer__logo">Ohmyfood</div>
-  
- <div class="footer__logo"> 
- <ul class="footer__list">
-  <li><a href="#"><i class="footer__logo-icon fas fa-map-marker-alt"></i> Proposer un restaurant</a></li>
-  <li><a href="#"><i class="footer__logo-icon fas fa-map-marker-alt"></i> Devenir partenaire</a></li>
-  <li><a href="#">Mentions légales</a></li>
-  <li><a href="#">Contact</a></li>
-                </ul>
-  </div>
+
+    <div class="footer__logo">Ohmyfood</div>
+
+    <div class="footer__logo-container">
+        <ul class="footer__link-list">
+            <li><a href="#"><i class="footer__link-icon fas fa-map-marker-alt"></i> Proposer un restaurant</a></li>
+            <li><a href="#"><i class="footer__link-icon fas fa-map-marker-alt"></i> Devenir partenaire</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
 </footer>*/
-
-
-
-
-//Footer Desktop
