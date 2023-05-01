@@ -1,0 +1,42 @@
+//Footer Mobile
+.footer {
+    background: $color-background-quaternary;
+    height: 186px;
+    color: $color-secondary;
+
+    &__logo {
+        font-family:$font-family-title;
+        font-weight: $font-weight-normal;
+        font-size: $font-size-paragraph;
+        line-height: $line-height-logo;
+        padding: 22px 0px 0px 25px
+    }
+
+    &__logo-icon {
+        width: 11px;
+        height: 13px;
+        padding-right: 18px
+    }
+
+
+
+}
+
+/*<footer class="footer">
+  
+<div class="footer__logo">Ohmyfood</div>
+  
+ <div class="footer__logo"> 
+ <ul class="footer__list">
+  <li><a href="#"><i class="footer__logo-icon fas fa-map-marker-alt"></i> Proposer un restaurant</a></li>
+  <li><a href="#"><i class="footer__logo-icon fas fa-map-marker-alt"></i> Devenir partenaire</a></li>
+  <li><a href="#">Mentions légales</a></li>
+  <li><a href="#">Contact</a></li>
+                </ul>
+  </div>
+</footer>*/
+
+
+
+
+//Footer Desktop
