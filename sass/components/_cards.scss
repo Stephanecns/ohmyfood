@@ -1,0 +1,174 @@
+//PlateAndPrice cards Mobile 
+.menu-item {
+    padding: 12px 16px 12px 15px;
+    width: 349px;
+    height: 69px;
+    background: $color-background-primary;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 15.0431px;
+
+    &__title {
+        font-family: $font-family-body;
+        font-weight: $font-weight-medium;
+        font-size: $font-size-paragraph;
+        line-height: $line-height-paragraph;
+
+        color: $color-primary;
+    }
+
+    &__details {
+        display: flex;
+        justify-content: space-between;
+
+        &__description {
+            font-family: $font-family-body;
+            font-weight: $font-weight-light;
+            font-size: $font-size-xsmall;
+            line-height: $line-height-paragraph;
+
+            color: $color-primary;
+        }
+
+        &__price {
+            font-family: $font-family-body;
+            font-weight: $font-weight-bold;
+            font-size: $font-size-xsmall;
+            line-height: $line-height-paragraph;
+
+            color: $color-tertiary;
+        }
+    }
+
+    &:hover {
+        //A compléter 
+    }
+}
+
+//PlateAndPrice cards Desktop 
+
+.menu-item {
+    padding: 12px 16px 12px 15px;
+    width: 634px;
+    height: 69px;
+    background: $color-background-primary;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 15.0431px;
+
+    &__title {
+        font-family: $font-family-body;
+        font-weight: $font-weight-medium;
+        font-size: $font-size-paragraph;
+        line-height: $line-height-paragraph;
+
+        color: $color-primary;
+    }
+
+    &__details {
+        display: flex;
+        justify-content: space-between;
+
+        &__description {
+            font-family: $font-family-body;
+            font-weight: $font-weight-light;
+            font-size: $font-size-xsmall;
+            line-height: $line-height-paragraph;
+
+            color: $color-primary;
+        }
+
+        &__price {
+            font-family: $font-family-body;
+            font-weight: $font-weight-bold;
+            font-size: $font-size-xsmall;
+            line-height: $line-height-paragraph;
+
+            color: $color-tertiary;
+        }
+    }
+
+    &:hover {
+        //A compléter 
+    }
+}
+
+//Composition du menu 
+.composition-title {
+    font-family: $font-family-body;
+    font-weight: $font-weight-light;
+    font-size: $font-size-title;
+    line-height: $line-height-title;
+    text-transform: uppercase;
+    color: $color-primary;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 0px;
+        margin-top: 6px;
+        border-bottom: 3px solid $color-badge;
+    }
+}
+
+//Card Menu
+.card {
+    &__image {
+        //contient l'image de la card
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    &__content {
+        // styles pour le contenu de la description+icon+titreduplat
+        padding: 16px 13px 12px 13px;
+    }
+
+    &__text {
+        //contient le titre du plat
+        font-family: $font-family-body;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-paragraph;
+        line-height: $line-height-paragraph;
+
+        color: $color-primary;
+
+    }
+
+    &__description {
+        font-family: $font-family-body;
+        font-weight: $font-weight-light;
+        font-size: $font-size-medium;
+        line-height:$line-height-medium;
+
+        color: $color-primary;
+    }
+
+    &__badge {
+        //contient le badge nouveauté
+    }
+
+    &__icon {
+        //contient l'icône de la card
+    }
+
+    &__wrapper {
+        //contient tous les éléments de la card
+        background: $color-background-primary;
+
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+    }
+
+    /*<article class="card__wrapper">
+  <img src="#" alt="Card Image" class="card__image">
+  <div class="card__content">
+    <h2 class="card__text">Card Title</h2>
+    <p class="card__description">Card Description</p>
+    <i class="card__icon"></i>
+  </div>
+</article>*/
+}
