@@ -1,0 +1,116 @@
+//Headermobile
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 63px;
+    background: $color-background-primary;
+
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+
+        font-family: $font-family-title;
+        font-weight: $font-weight-normal;
+        font-size: $font-size-xlarge;
+        line-height: $line-height-large;
+        
+        text-align: center;
+        
+        color: $color-title;
+        padding-top: 14px;
+        padding-bottom: 5px;
+        
+
+    }
+
+    .icon {
+        padding-left: 20px;
+    }
+}
+
+//HeaderDesktop
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 96px;
+    background: $color-background-primary;
+
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+
+        font-family: $font-family-title;
+        font-weight: $font-weight-normal;
+        font-size: $font-size-xlarge;
+        line-height: $line-height-large;
+        
+        text-align: center;
+        
+        color: $color-title;
+        padding-top: 14px;
+        padding-bottom: 5px;
+        
+
+    }
+
+    .icon {
+        padding-left: 20px;
+    }
+}
+
+/*<header class="header">
+  <div class="icon">
+    <i class="  "></i>
+  </div>
+  <div class="logo">Ohmyfood</div>
+</header>*/
+
+//Sous-header
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: #EAEAEA;
+    padding: 0;
+  
+    .location {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 17px;
+  
+      &__icon {
+        width: 12px;
+        height: 16px;
+        background: #353535;
+      }
+  
+      &__text {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  /*<header class="header">
+  <div class="location">
+    <i class="location__icon fas fa-map-marker-alt"></i>
+    <span class="location__text">Paris, Belleville</span>
+  </div>
+</header>*/
