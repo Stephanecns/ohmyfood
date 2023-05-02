@@ -1,0 +1,364 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.btn {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 18.75px;
+  text-align: center;
+  width: 180px;
+  height: 50px;
+}
+.btn:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+.badge {
+  background: #99E2D0;
+  color: #008766;
+  font-size: 14px;
+  line-height: 16.41px;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  width: 80px;
+  height: 29px;
+}
+
+.btn-goback {
+  cursor: pointer;
+  padding: 24px 23px 23px 23px;
+  background: #353535;
+  width: 17.2px;
+  height: 16px;
+}
+
+.menu-item {
+  padding: 12px 16px 12px 15px;
+  width: 349px;
+  height: 69px;
+  background: #FFFFFF;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+}
+.menu-item__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.09px;
+  color: #000000;
+}
+.menu-item__details {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-item__details__description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 21.09px;
+  color: #000000;
+}
+.menu-item__details__price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 21.09px;
+  color: #353535;
+}
+.menu-item {
+  padding: 12px 16px 12px 15px;
+  width: 634px;
+  height: 69px;
+  background: #FFFFFF;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+}
+.menu-item__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.09px;
+  color: #000000;
+}
+.menu-item__details {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-item__details__description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 21.09px;
+  color: #000000;
+}
+.menu-item__details__price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 21.09px;
+  color: #353535;
+}
+.composition-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28.13px;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+}
+.composition-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 0px;
+  margin-top: 6px;
+  border-bottom: 3px solid #99E2D0;
+}
+
+.card {
+  /*<article class="card__wrapper">
+    <img src="#" alt="Card Image" class="card__image">
+    <div class="card__content">
+      <h2 class="card__text">Card Title</h2>
+      <p class="card__description">Card Description</p>
+      <i class="card__icon"></i>
+    </div>
+  </article>*/
+}
+.card__image {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card__content {
+  padding: 16px 13px 12px 13px;
+}
+.card__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.09px;
+  color: #000000;
+}
+.card__description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 19.92px;
+  color: #000000;
+}
+.card__wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.footer {
+  background: #353535;
+  height: 186px;
+  color: #FFFFFF;
+}
+.footer__logo {
+  font-family: "Shrikhand", italic, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 22px 0px 0px 25px;
+}
+.footer__link-icon {
+  width: 11px;
+  height: 13px;
+  padding-right: 18px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 30px 25px;
+  gap: 16px;
+  background: #353535;
+  height: 186px;
+  color: #FFFFFF;
+}
+.footer__link-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 7px;
+}
+.footer__logo {
+  font-family: "Shrikhand", italic, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  position: relative;
+  top: 57px;
+  left: 1276px;
+  gap: 10px;
+}
+.footer__link-icon {
+  width: 11px;
+  height: 13px;
+  padding-right: 18px;
+}
+
+/*<footer class="footer">
+
+    <div class="footer__logo">Ohmyfood</div>
+
+    <div class="footer__logo-container">
+        <ul class="footer__link-list">
+            <li><a href="#"><i class="footer__link-icon fas fa-map-marker-alt"></i> Proposer un restaurant</a></li>
+            <li><a href="#"><i class="footer__link-icon fas fa-map-marker-alt"></i> Devenir partenaire</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</footer>*/
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  height: 63px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-family: "Shrikhand", italic, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40.82px;
+  text-align: center;
+  color: #101010;
+  padding-top: 14px;
+  padding-bottom: 5px;
+}
+.header .icon {
+  padding-left: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  height: 96px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+.header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-family: "Shrikhand", italic, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40.82px;
+  text-align: center;
+  color: #101010;
+  padding-top: 14px;
+  padding-bottom: 5px;
+}
+.header .icon {
+  padding-left: 20px;
+}
+
+/*<header class="header">
+  <div class="icon">
+    <i class="  "></i>
+  </div>
+  <div class="logo">Ohmyfood</div>
+</header>*/
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background: #EAEAEA;
+  padding: 0;
+}
+.section__location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+.section__location-icon {
+  width: 12px;
+  height: 16px;
+  color: #353535;
+}
+.section__location-text {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #353535;
+}
+
+/*<header class="header">
+  <div class="location">
+    <i class="location__icon fas fa-map-marker-alt"></i>
+    <span class="location__text">Paris, Belleville</span>
+  </div>
+</header>*//*# sourceMappingURL=style.css.map */
