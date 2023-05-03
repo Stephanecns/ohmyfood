@@ -107,3 +107,91 @@
     height: 16px;
 }
 
+//Section fonctionnoment + btn
+.section--fonctionnement {
+    padding: 48px 20px 68px 20px;
+    background:#FFFFFF ;
+}
+
+.section__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+//
+.group__container{
+    display: grid;
+    gap: 24.94px;
+    justify-content: center;
+    position: relative;
+}
+
+//
+.group {
+    &__icon {
+      color:#9356DC;
+      position: relative;
+      left: -8px;
+      top: 47px;
+    }
+    
+    &__number {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 17px;
+
+    color: #FFFFFF;
+
+    position: relative;
+    right: 23.1px;
+    top: 45px;
+    }
+
+    
+    .button {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 322.49px;
+    height: 72.38px;
+    background: #F7F7F7;
+
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+     
+      &__icon {
+        color: #7E7E7E;
+        position: relative;
+        right: 24px;
+      }
+
+      &__icon-purple{
+        color: #9356DC;
+      }
+      
+      &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #000000;
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
