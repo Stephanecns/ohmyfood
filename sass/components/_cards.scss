@@ -111,12 +111,72 @@
     }
 }
 
-//Card Menu
+//Card Menu Mobile 
 .card {
     &__image {
         //contient l'image de la card
         width: 100%;
-        height: auto;
+        max-height: 231px;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    &__content {
+        // styles pour le contenu de la description+icon+titreduplat
+        padding: 16px 13px 12px 13px;
+    }
+
+    &__text {
+        //contient le titre du plat
+        font-family: $font-family-body;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-paragraph;
+        line-height: $line-height-paragraph;
+
+        color: $color-primary;
+
+    }
+
+    &__description {
+        font-family: $font-family-body;
+        font-weight: $font-weight-light;
+        font-size: $font-size-medium;
+        line-height:$line-height-medium;
+
+        color: $color-primary;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    &__badge {
+        //contient le badge nouveauté
+    }
+
+    &__icon {
+        position: relative;
+        left: 89%;
+        bottom: 36px;
+        color:  #9356DC;
+        font-size: 1.4em;
+    }
+
+    &__wrapper {
+        //contient tous les éléments de la card
+        background: $color-background-primary;
+
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        max-width: 498.65px;
+    }
+
+}
+
+//Card Menu DESKTOP
+.cardi {
+    &__image {
+        //contient l'image de la card
+        width: 100%;
         object-fit: cover;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
@@ -163,6 +223,10 @@
         border-radius: 15px;
     }
 
+}
+
+
+
     /*<article class="card__wrapper">
   <img src="#" alt="Card Image" class="card__image">
   <div class="card__content">
@@ -171,4 +235,4 @@
     <i class="card__icon"></i>
   </div>
 </article>*/
-}
+
