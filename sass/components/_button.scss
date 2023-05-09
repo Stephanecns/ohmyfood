@@ -98,21 +98,52 @@
   }
 
 //Like + effet au clic 
+/*.card__logo {
+  font-size: 25px;
+  position: relative;
+  left: 29px;
+  transition-duration: 100ms;
+  opacity: 0;
+}
+
+#heartCheckbox {
+  display: none;
+}
+
+#heartCheckbox:checked + label .card__logo {
+  opacity: 1;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.card__icon {
+  font-size: 25px;
+  color: green;
+}*/
+
+/*<input type="checkbox" id="heartCheckbox">
+<label for="heartCheckbox">
+<i class="card__logo fa-solid fa-heart"></i>
+</label>
+<i class="card__icon fa-regular fa-heart"></i>*/
 
 
 //Icon goback 
-.btn-goback{
+.header__icon{
     cursor: pointer;
-    padding: 24px 23px 23px 23px;
-    background: $color-background-quaternary;
-    width: 17.2px;
-    height: 16px;
+    margin: 24px 23px 23px 23px;
+    color: $color-background-quaternary;
+   font-size: $font-size-regular;
 }
 
 //Section fonctionnoment + btn
 .section--fonctionnement {
     padding: 48px 20px 68px 20px;
-    background:#FFFFFF ;
+    background:#FFFFFF;
+    display: grid;
+    justify-content: center;
 }
 
 .section__title {
@@ -195,12 +226,93 @@
 .section__restaurants{
     padding: 54px 18px 66px 17px;
     display: grid;
+    justify-content:center;
     gap: 20px;
+    background: #F7F7F7;
 } 
 
 .section__title-padding{
     padding-bottom: 25px;
 }
+
+
+
+//Section--dish 
+.dish__image{
+width: 100%;
+height: 275px;
+object-fit: cover;
+}
+
+//section--dish 
+
+.section__menu {
+  width: 100%;
+  border-radius: 40px 40px 0px 0px;
+  background:#F7F7F7 ;
+  position: relative;
+  bottom: 58px;
+  
+  
+  
+
+  &-title {
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 41px;
+    padding: 32px 17px 0px 17px;
+  }
+
+  &-icon{
+    color: $color-title;
+    font-size: 22px;
+    position: relative;
+    bottom: 33px;
+    left: 325px;
+    cursor: pointer;
+  }
+}
+
+//Btn-menu 
+.container-btn {
+  display: flex;
+  justify-content: center;
+
+  .btn__menu {
+    background: linear-gradient(193.33deg, $color-ellipse -11.44%, $color-btn 123.93%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+    height: 50px;
+    padding: 1rem;
+    margin: 40px 0px 40px 0px;
+    cursor: pointer;
+    width: 186px;
+    height: 50px;
+
+    &:hover {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, $color-ellipse -5.2%, $color-btn 110.74%);
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    }
+
+    .btn-text {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+
+      color: $color-secondary;
+    }
+  }
+}
+
+
+
+
   
   
   

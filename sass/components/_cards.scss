@@ -1,17 +1,21 @@
 //PlateAndPrice cards Mobile 
 .menu-item {
-    padding: 12px 16px 12px 15px;
-    width: 349px;
+    margin: 12px 13px 12px 12px;
+    padding: 12px 0px 12px 15px;
+    max-width: 634px;
     height: 69px;
     background: $color-background-primary;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15.0431px;
+    cursor: pointer;
 
     &__title {
         font-family: $font-family-body;
         font-weight: $font-weight-medium;
         font-size: $font-size-paragraph;
         line-height: $line-height-paragraph;
+        padding-bottom: 5px;
+    
 
         color: $color-primary;
     }
@@ -19,12 +23,14 @@
     &__details {
         display: flex;
         justify-content: space-between;
+        margin: 0;
 
         &__description {
             font-family: $font-family-body;
             font-weight: $font-weight-light;
             font-size: $font-size-xsmall;
             line-height: $line-height-paragraph;
+            margin: 0;
 
             color: $color-primary;
         }
@@ -34,6 +40,8 @@
             font-weight: $font-weight-bold;
             font-size: $font-size-xsmall;
             line-height: $line-height-paragraph;
+            margin: 0;
+            padding-right: 15px;
 
             color: $color-tertiary;
         }
@@ -46,7 +54,7 @@
 
 //PlateAndPrice cards Desktop 
 
-.menu-item {
+.menu-itemi {
     padding: 12px 16px 12px 15px;
     width: 634px;
     height: 69px;
@@ -92,7 +100,7 @@
 }
 
 //Composition du menu 
-.composition-title {
+.section__composition {
     font-family: $font-family-body;
     font-weight: $font-weight-light;
     font-size: $font-size-title;
@@ -100,6 +108,7 @@
     text-transform: uppercase;
     color: $color-primary;
     position: relative;
+    margin: 0px 0px 12px 13px;
 
     &::after {
         content: '';
@@ -157,7 +166,7 @@
         position: relative;
         left: 89%;
         bottom: 36px;
-        color:  #9356DC;
+        color:  $color-title;
         font-size: 1.4em;
     }
 
@@ -168,6 +177,7 @@
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
         max-width: 498.65px;
+        margin-bottom: 20px;
     }
 
 }
@@ -225,14 +235,4 @@
 
 }
 
-
-
-    /*<article class="card__wrapper">
-  <img src="#" alt="Card Image" class="card__image">
-  <div class="card__content">
-    <h2 class="card__text">Card Title</h2>
-    <p class="card__description">Card Description</p>
-    <i class="card__icon"></i>
-  </div>
-</article>*/
 
