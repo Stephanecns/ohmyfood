@@ -15,7 +15,6 @@ body {
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
-  background: #F7F7F7;
 }
 
 .main-container {
@@ -128,17 +127,47 @@ a:active {
   bottom: 286px;
 }
 
-.btn-goback {
+/*.card__logo {
+  font-size: 25px;
+  position: relative;
+  left: 29px;
+  transition-duration: 100ms;
+  opacity: 0;
+}
+
+#heartCheckbox {
+  display: none;
+}
+
+#heartCheckbox:checked + label .card__logo {
+  opacity: 1;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.card__icon {
+  font-size: 25px;
+  color: green;
+}*/
+/*<input type="checkbox" id="heartCheckbox">
+<label for="heartCheckbox">
+<i class="card__logo fa-solid fa-heart"></i>
+</label>
+<i class="card__icon fa-regular fa-heart"></i>*/
+.header__icon {
   cursor: pointer;
-  padding: 24px 23px 23px 23px;
-  background: #353535;
-  width: 17.2px;
-  height: 16px;
+  margin: 24px 23px 23px 23px;
+  color: #353535;
+  font-size: 20px;
 }
 
 .section--fonctionnement {
   padding: 48px 20px 68px 20px;
   background: #FFFFFF;
+  display: grid;
+  justify-content: center;
 }
 
 .section__title {
@@ -204,37 +233,105 @@ a:active {
 .section__restaurants {
   padding: 54px 18px 66px 17px;
   display: grid;
+  justify-content: center;
   gap: 20px;
+  background: #F7F7F7;
 }
 
 .section__title-padding {
   padding-bottom: 25px;
 }
 
+.dish__image {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section__menu {
+  width: 100%;
+  border-radius: 40px 40px 0px 0px;
+  background: #F7F7F7;
+  position: relative;
+  bottom: 58px;
+}
+.section__menu-title {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
+  padding: 32px 17px 0px 17px;
+}
+.section__menu-icon {
+  color: #101010;
+  font-size: 22px;
+  position: relative;
+  bottom: 33px;
+  left: 325px;
+  cursor: pointer;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+}
+.container-btn .btn__menu {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  border: none;
+  text-align: center;
+  height: 50px;
+  padding: 1rem;
+  margin: 40px 0px 40px 0px;
+  cursor: pointer;
+  width: 186px;
+  height: 50px;
+}
+.container-btn .btn__menu:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+.container-btn .btn__menu .btn-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
 .menu-item {
-  padding: 12px 16px 12px 15px;
-  width: 349px;
+  margin: 12px 13px 12px 12px;
+  padding: 12px 0px 12px 15px;
+  max-width: 634px;
   height: 69px;
   background: #FFFFFF;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15.0431px;
+  cursor: pointer;
 }
 .menu-item__title {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 21.09px;
+  padding-bottom: 5px;
   color: #000000;
 }
 .menu-item__details {
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }
 .menu-item__details__description {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 21.09px;
+  margin: 0;
   color: #000000;
 }
 .menu-item__details__price {
@@ -242,9 +339,11 @@ a:active {
   font-weight: 700;
   font-size: 15px;
   line-height: 21.09px;
+  margin: 0;
+  padding-right: 15px;
   color: #353535;
 }
-.menu-item {
+.menu-itemi {
   padding: 12px 16px 12px 15px;
   width: 634px;
   height: 69px;
@@ -252,32 +351,32 @@ a:active {
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15.0431px;
 }
-.menu-item__title {
+.menu-itemi__title {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 21.09px;
   color: #000000;
 }
-.menu-item__details {
+.menu-itemi__details {
   display: flex;
   justify-content: space-between;
 }
-.menu-item__details__description {
+.menu-itemi__details__description {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 21.09px;
   color: #000000;
 }
-.menu-item__details__price {
+.menu-itemi__details__price {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 21.09px;
   color: #353535;
 }
-.composition-title {
+.section__composition {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 24px;
@@ -285,8 +384,9 @@ a:active {
   text-transform: uppercase;
   color: #000000;
   position: relative;
+  margin: 0px 0px 12px 13px;
 }
-.composition-title::after {
+.section__composition::after {
   content: "";
   display: block;
   width: 50px;
@@ -326,7 +426,7 @@ a:active {
   position: relative;
   left: 89%;
   bottom: 36px;
-  color: #9356DC;
+  color: #101010;
   font-size: 1.4em;
 }
 .card__wrapper {
@@ -334,6 +434,7 @@ a:active {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   max-width: 498.65px;
+  margin-bottom: 20px;
 }
 
 .cardi__image {
@@ -366,14 +467,6 @@ a:active {
   border-radius: 15px;
 }
 
-/*<article class="card__wrapper">
-  <img src="#" alt="Card Image" class="card__image">
-  <div class="card__content">
-    <h2 class="card__text">Card Title</h2>
-    <p class="card__description">Card Description</p>
-    <i class="card__icon"></i>
-  </div>
-</article>*/
 .footer {
   background: #353535;
   height: 186px;
@@ -483,6 +576,10 @@ a:active {
   padding-left: 20px;
 }
 
+.header__logo-title {
+  padding-right: 57px;
+}
+
 .headerdesktop {
   display: flex;
   justify-content: center;
@@ -536,4 +633,76 @@ a:active {
   font-size: 16px;
   line-height: 19.92px;
   color: #353535;
+}
+
+@media screen and (min-width: 1130px) {
+  .header {
+    height: 96px;
+  }
+  .group__container {
+    display: flex;
+  }
+  .section--fonctionnement {
+    display: grid;
+    justify-content: center;
+    padding-right: 89px;
+  }
+  .section__restaurants {
+    justify-content: center;
+  }
+  .reservation__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 109px;
+    grid-row-gap: 48px;
+  }
+  .card__wrapper {
+    width: 490px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 30px 25px;
+    gap: 16px;
+    margin-top: -58px;
+  }
+  .footer__link-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-right: 229px;
+    gap: 7px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 1;
+  }
+  .footer__logo {
+    position: relative;
+    bottom: 40px;
+    left: 781px;
+  }
+  .section__menu {
+    display: grid;
+    justify-content: center;
+    width: 80%;
+    margin-left: 119px;
+  }
+  .section__menu-title {
+    padding-left: 175px;
+  }
+  .section__menu-icon {
+    left: 465px;
+  }
+  .section__container {
+    display: grid;
+    justify-content: center;
+    grid-gap: 37px;
+  }
+  .menu-item {
+    width: 634px;
+  }
 }/*# sourceMappingURL=style.css.map */
