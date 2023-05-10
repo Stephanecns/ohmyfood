@@ -11,14 +11,12 @@ html {
 }
 
 body {
-  max-width: 1440px;
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
 }
 
 .main-container {
-  max-width: 1440px;
   box-sizing: border-box;
 }
 
@@ -499,6 +497,7 @@ a:active {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  padding-left: 10px;
 }
 
 .footeri {
@@ -674,12 +673,12 @@ a:active {
     flex-direction: row;
     align-items: flex-start;
     padding-right: 229px;
-    gap: 7px;
+    gap: 22px;
   }
   .footer__logo {
     position: relative;
     bottom: 40px;
-    left: 781px;
+    left: 865px;
   }
   .section__menu {
     display: grid;
