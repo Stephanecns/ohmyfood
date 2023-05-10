@@ -668,6 +668,7 @@ a:active {
     padding: 30px 25px;
     gap: 16px;
     margin-top: -58px;
+    background-color: red;
   }
   .footer__link-list {
     display: flex;
@@ -675,10 +676,6 @@ a:active {
     align-items: flex-start;
     padding-right: 229px;
     gap: 7px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    z-index: 1;
   }
   .footer__logo {
     position: relative;
