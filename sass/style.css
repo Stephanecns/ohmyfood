@@ -121,39 +121,44 @@ a:active {
   border-radius: 2px;
   padding: 0.5em;
   position: relative;
-  left: 70%;
-  bottom: 286px;
+  left: 242px;
+  bottom: 277px;
 }
 
-/*.card__logo {
+.heart {
+  height: 0;
+}
+.heart__logo {
   font-size: 25px;
   position: relative;
-  left: 29px;
+  left: 278px;
+  bottom: 42px;
   transition-duration: 100ms;
+  transition-property: color;
   opacity: 0;
+  z-index: 2;
 }
-
-#heartCheckbox {
-  display: none;
-}
-
-#heartCheckbox:checked + label .card__logo {
+.heart:hover .heart__logo {
   opacity: 1;
   background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
-
-.card__icon {
+.heart__icon {
+  position: relative;
+  left: 250px;
+  bottom: 42px;
   font-size: 25px;
-  color: green;
-}*/
-/*<input type="checkbox" id="heartCheckbox">
-<label for="heartCheckbox">
-<i class="card__logo fa-solid fa-heart"></i>
-</label>
-<i class="card__icon fa-regular fa-heart"></i>*/
+  color: #101010;
+  z-index: 1;
+}
+
+/*<div class="heart">
+  <i class="heart__logo card__logo fa-solid fa-heart"></i>
+  <i class="heart__icon card__icon fa-regular fa-heart"></i>
+</div>
+*/
 .header__icon {
   cursor: pointer;
   margin: 24px 23px 23px 23px;
@@ -421,9 +426,6 @@ a:active {
   margin-bottom: 0px;
 }
 .card__icon {
-  position: relative;
-  left: 89%;
-  bottom: 36px;
   color: #101010;
   font-size: 1.4em;
 }
@@ -658,6 +660,16 @@ a:active {
   }
   .card__wrapper {
     width: 490px;
+  }
+  .badge {
+    left: 392px;
+    bottom: 280px;
+  }
+  .heart__logo {
+    left: 432px;
+  }
+  .heart__icon {
+    left: 404px;
   }
   .footer {
     display: flex;

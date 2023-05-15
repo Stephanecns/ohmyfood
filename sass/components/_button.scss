@@ -93,41 +93,50 @@
     border-radius: 2px;
     padding: 0.5em;
     position: relative;
-    left: 70%;
-    bottom: 286px;
+    left: 242px;
+    bottom: 277px;
   }
 
 //Like + effet au clic 
-/*.card__logo {
-  font-size: 25px;
-  position: relative;
-  left: 29px;
-  transition-duration: 100ms;
-  opacity: 0;
+.heart {
+  height: 0;
+
+  &__logo {
+    font-size: 25px;
+    position: relative;
+    left: 278px;
+    bottom: 42px;
+    transition-duration: 100ms;
+    transition-property: color;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  &:hover &__logo {
+    opacity: 1;
+    background: linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &__icon {
+    position: relative;
+    left: 250px;
+    bottom: 42px;
+    font-size: 25px;
+    color: #101010;
+    z-index: 1;
+
+  }
 }
 
-#heartCheckbox {
-  display: none;
-}
 
-#heartCheckbox:checked + label .card__logo {
-  opacity: 1;
-  background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.card__icon {
-  font-size: 25px;
-  color: green;
-}*/
-
-/*<input type="checkbox" id="heartCheckbox">
-<label for="heartCheckbox">
-<i class="card__logo fa-solid fa-heart"></i>
-</label>
-<i class="card__icon fa-regular fa-heart"></i>*/
+/*<div class="heart">
+  <i class="heart__logo card__logo fa-solid fa-heart"></i>
+  <i class="heart__icon card__icon fa-regular fa-heart"></i>
+</div>
+*/
 
 
 //Icon goback 
