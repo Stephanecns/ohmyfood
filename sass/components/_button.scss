@@ -138,6 +138,40 @@
 </div>
 */
 
+// Like + effet au clic resturant
+.heart {
+  height: 0;
+
+  .section__menu-logo {
+    font-size: 25px;
+    position: relative;
+    left: 309px;
+    bottom: 34px;
+    transition-duration: 100ms;
+    transition-property: color;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  &:hover .section__menu-logo {
+    opacity: 1;
+    background: linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .section__menu-icon {
+    position: relative;
+    left: 280px;
+    bottom: 34px;
+    font-size: 25px;
+    color: #101010;
+    z-index: 1;
+
+  }
+}
+
 
 //Icon goback 
 .header__icon{
