@@ -1,0 +1,111 @@
+$squarew: 100px;/*Largeur du carré*/
+$squareh: 100px;/*hauteur du carré*/
+$squaremargin: 5px;/*Espace entre les carrés*/
+$loaderw: $squarew * 3 + $squaremargin *2; /*largeur totale du loader*/
+$loaderh: $squareh * 3 + $squaremargin *2; /*hauteur totale du loader*/
+$delayenter: 300ms; /* 300 millisecondes avant affichage à apparaître à l'écran*/
+$topenter: -10px; /*Carré arrive par le haut*/
+
+/*étapes de l'animation du loader */
+@keyframes enter {
+    0% {
+      opacity: 0;
+      top: $topenter;
+    }
+    5% {
+      opacity: 1;
+      top: 0px;
+    }
+    50.9% {
+      opacity: 1;
+      top: 0px;
+    }
+    55.9% {
+      opacity: 0;
+      top: - $topenter;
+    }
+  }
+
+  @keyframes fade-out {
+    0% {
+      backdrop-filter: blur(5px);
+    }
+    100% {
+      backdrop-filter: none;
+    }
+  }
+  
+  .loader {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(5px);
+    animation: fade-out 10s forwards;
+    z-index: 10;
+    padding-top: 300px;
+    
+  }
+  
+  .square { 
+    background: rgb(238,174,202);
+    width: $squarew;
+    height: $squareh;
+    float: revert;
+    margin-right: $squaremargin;
+    margin-top: $squaremargin;
+    position: relative;
+    opacity: 0;
+    animation: enter 6s forwards;
+  }
+  
+  .enter {
+    top: 0px;
+    opacity: 1;
+  }
+  
+  .square:nth-child(1) {
+    animation-delay: 6 * $delayenter;
+  }
+  
+  .square:nth-child(2) {
+    animation-delay: 7 * $delayenter;
+  }
+  
+  .square:nth-child(3) {
+    animation-delay: 8 * $delayenter;
+    background: #9356DC;
+  }
+  
+  .square:nth-child(4) {
+    animation-delay: 3 * $delayenter;
+  }
+  
+  .square:nth-child(5) {
+    animation-delay: 4 * $delayenter;
+  }
+  
+  .square:nth-child(6) {
+    animation-delay: 5 * $delayenter;
+  }
+  
+
+  
+  .square:nth-child(8) {
+    animation-delay: 1 * $delayenter;
+  }
+  
+  .square:nth-child(9) {
+    animation-delay: 2 * $delayenter;
+  }
+  
+
+
+
+
+
+
+  

@@ -747,4 +747,104 @@ a:active {
   .menu-item {
     width: 634px;
   }
+}
+/*Largeur du carré*/
+/*hauteur du carré*/
+/*Espace entre les carrés*/
+/*largeur totale du loader*/
+/*hauteur totale du loader*/
+/* 300 millisecondes avant affichage à apparaître à l'écran*/
+/*Carré arrive par le haut*/
+/*étapes de l'animation du loader */
+@keyframes enter {
+  0% {
+    opacity: 0;
+    top: -10px;
+  }
+  5% {
+    opacity: 1;
+    top: 0px;
+  }
+  50.9% {
+    opacity: 1;
+    top: 0px;
+  }
+  55.9% {
+    opacity: 0;
+    top: 10px;
+  }
+}
+@keyframes fade-out {
+  0% {
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  100% {
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+  }
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  animation: fade-out 10s forwards;
+  z-index: 10;
+  padding-top: 300px;
+}
+
+.square {
+  background: rgb(238, 174, 202);
+  width: 100px;
+  height: 100px;
+  float: revert;
+  margin-right: 5px;
+  margin-top: 5px;
+  position: relative;
+  opacity: 0;
+  animation: enter 6s forwards;
+}
+
+.enter {
+  top: 0px;
+  opacity: 1;
+}
+
+.square:nth-child(1) {
+  animation-delay: 1800ms;
+}
+
+.square:nth-child(2) {
+  animation-delay: 2100ms;
+}
+
+.square:nth-child(3) {
+  animation-delay: 2400ms;
+  background: #9356DC;
+}
+
+.square:nth-child(4) {
+  animation-delay: 900ms;
+}
+
+.square:nth-child(5) {
+  animation-delay: 1200ms;
+}
+
+.square:nth-child(6) {
+  animation-delay: 1500ms;
+}
+
+.square:nth-child(8) {
+  animation-delay: 300ms;
+}
+
+.square:nth-child(9) {
+  animation-delay: 600ms;
 }/*# sourceMappingURL=style.css.map */
