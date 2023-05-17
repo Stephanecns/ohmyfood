@@ -335,6 +335,60 @@ a:active {
   color: #FFFFFF;
 }
 
+/*.menu-item {
+    margin: 12px 13px 12px 12px;
+    padding: 12px 0px 12px 15px;
+    max-width: 634px;
+    height: 69px;
+    background: $color-background-primary;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 15.0431px;
+    cursor: pointer;
+
+    &__title {
+        font-family: $font-family-body;
+        font-weight: $font-weight-medium;
+        font-size: $font-size-paragraph;
+        line-height: $line-height-paragraph;
+        padding-bottom: 5px;
+
+
+        color: $color-primary;
+    }
+
+    &__details {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+
+        &__description {
+            font-family: $font-family-body;
+            font-weight: $font-weight-light;
+            font-size: $font-size-xsmall;
+            line-height: $line-height-paragraph;
+            margin: 0;
+
+            color: $color-primary;
+        }
+
+        &__price {
+            font-family: $font-family-body;
+            font-weight: $font-weight-bold;
+            font-size: $font-size-xsmall;
+            line-height: $line-height-paragraph;
+            margin: 0;
+            padding-right: 15px;
+
+            color: $color-tertiary;
+        }
+    }
+
+    &:hover {
+        //A compléter 
+    }
+}
+
+*/
 .menu-item {
   margin: 12px 13px 12px 12px;
   padding: 12px 0px 12px 15px;
@@ -344,6 +398,8 @@ a:active {
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15.0431px;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 .menu-item__title {
   font-family: "Roboto", sans-serif;
@@ -374,40 +430,34 @@ a:active {
   margin: 0;
   padding-right: 15px;
   color: #353535;
+  transform: translateX(0);
+  transition: transform 250ms;
 }
-.menu-itemi {
-  padding: 12px 16px 12px 15px;
-  width: 634px;
-  height: 69px;
-  background: #FFFFFF;
-  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-  border-radius: 15.0431px;
+.menu-item__details .menu-item__confirmation {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 0;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 0 15.0431px 15.0431px 0;
+  transition: transform 250ms, background-color 250ms;
+  transform: translateX(0%);
+  padding: 24px 19px;
 }
-.menu-itemi__title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21.09px;
-  color: #000000;
+.menu-item:hover .menu-item__confirmation {
+  width: 59px;
+  background-color: #99E2D0;
+  transform: translateX(-100%);
 }
-.menu-itemi__details {
-  display: flex;
-  justify-content: space-between;
+.menu-item:hover .menu-item__details__price {
+  transform: translateX(-148%);
 }
-.menu-itemi__details__description {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 21.09px;
-  color: #000000;
+.menu-item .menu-item__confirmation-logo {
+  font-size: 20px;
+  color: white;
 }
-.menu-itemi__details__price {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 21.09px;
-  color: #353535;
-}
+
 .section__composition {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -464,36 +514,6 @@ a:active {
   border-radius: 15px;
   max-width: 498.65px;
   margin-bottom: 20px;
-}
-
-.cardi__image {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.cardi__content {
-  padding: 16px 13px 12px 13px;
-}
-.cardi__text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21.09px;
-  color: #000000;
-}
-.cardi__description {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 17px;
-  line-height: 19.92px;
-  color: #000000;
-}
-.cardi__wrapper {
-  background: #FFFFFF;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
 }
 
 .footer {
