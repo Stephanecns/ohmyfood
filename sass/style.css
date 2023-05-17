@@ -802,12 +802,7 @@ a:active {
   100% {
     -webkit-backdrop-filter: none;
             backdrop-filter: none;
-  }
-}
-@keyframes loader {
-  100% {
-    opacity: 0;
-    z-index: -10;
+    z-index: -2;
   }
 }
 .loader {
@@ -820,7 +815,7 @@ a:active {
   top: 0;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  animation: loader 10s forwards;
+  animation: fade-out 10s forwards;
   z-index: 10;
   padding-top: 300px;
 }
@@ -834,7 +829,7 @@ a:active {
   margin-top: 5px;
   position: relative;
   opacity: 0;
-  animation: enter 6s forwards;
+  animation: enter 5s forwards;
 }
 
 .enter {

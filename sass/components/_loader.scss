@@ -32,15 +32,10 @@ $topenter: -10px; /*Carré arrive par le haut*/
     }
     100% {
       backdrop-filter: none;
+      z-index: -2;
     }
   }
 
-  @keyframes loader {
-    100% {
-      opacity: 0;
-      z-index: -10;
-    }
-  }
   
   .loader {
     display: flex;
@@ -51,7 +46,7 @@ $topenter: -10px; /*Carré arrive par le haut*/
     left: 0;
     top: 0;
     backdrop-filter: blur(5px);
-    animation: loader 10s forwards;
+    animation: fade-out 10s forwards;
     z-index: 10;
     padding-top: 300px;
     
@@ -66,7 +61,7 @@ $topenter: -10px; /*Carré arrive par le haut*/
     margin-top: $squaremargin;
     position: relative;
     opacity: 0;
-    animation: enter 6s forwards;
+    animation: enter 5s forwards;
   }
   
   .enter {
