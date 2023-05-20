@@ -1,59 +1,4 @@
 //PlateAndPrice cards Mobile 
-/*.menu-item {
-    margin: 12px 13px 12px 12px;
-    padding: 12px 0px 12px 15px;
-    max-width: 634px;
-    height: 69px;
-    background: $color-background-primary;
-    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-    border-radius: 15.0431px;
-    cursor: pointer;
-
-    &__title {
-        font-family: $font-family-body;
-        font-weight: $font-weight-medium;
-        font-size: $font-size-paragraph;
-        line-height: $line-height-paragraph;
-        padding-bottom: 5px;
-    
-
-        color: $color-primary;
-    }
-
-    &__details {
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-
-        &__description {
-            font-family: $font-family-body;
-            font-weight: $font-weight-light;
-            font-size: $font-size-xsmall;
-            line-height: $line-height-paragraph;
-            margin: 0;
-
-            color: $color-primary;
-        }
-
-        &__price {
-            font-family: $font-family-body;
-            font-weight: $font-weight-bold;
-            font-size: $font-size-xsmall;
-            line-height: $line-height-paragraph;
-            margin: 0;
-            padding-right: 15px;
-
-            color: $color-tertiary;
-        }
-    }
-
-    &:hover {
-        //A compléter 
-    }
-}
-
-*/
-
 .menu-item {
     margin: 12px 13px 12px 12px;
     padding: 12px 0px 12px 15px;
@@ -130,8 +75,6 @@
         color: white;
     }
     }
-  
-  
 
 //Composition du menu 
 .section__composition {

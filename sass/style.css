@@ -137,6 +137,11 @@ a:active {
   transition-property: color;
   opacity: 0;
   z-index: 2;
+  transition: opacity 2s ease-in-out;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#ff79dA, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 .heart:hover .heart__logo {
   opacity: 1;
