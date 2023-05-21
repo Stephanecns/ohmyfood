@@ -36,29 +36,6 @@ a:active {
   color: #FFFFFF;
 }
 
-/*
-.btn {
-    background: linear-gradient(193.33deg, $color-ellipse -11.44%, $color-btn 123.93%);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
-    transform: matrix(1, 0, 0, -1, 0, 0);
-    color: $color-secondary;
-    font-size: $font-size-small;
-    line-height: $line-height-small;
-    text-align: center;
-    width: 180px;
-    height: 50px;
-
-
-    &:hover {
-            background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15))
-            , linear-gradient(200.64deg, $color-ellipse -5.2%, $color-btn 110.74%);
-
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-
-        }
-    }
-*/
 .reservation__section {
   display: flex;
   flex-direction: column;
@@ -133,15 +110,13 @@ a:active {
   position: relative;
   left: 278px;
   bottom: 42px;
-  transition-duration: 100ms;
-  transition-property: color;
   opacity: 0;
   z-index: 2;
   transition: opacity 2s ease-in-out;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(#ff79dA, #9356dc);
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
 }
 .heart:hover .heart__logo {
   opacity: 1;
@@ -159,11 +134,6 @@ a:active {
   z-index: 1;
 }
 
-/*<div class="heart">
-  <i class="heart__logo card__logo fa-solid fa-heart"></i>
-  <i class="heart__icon card__icon fa-regular fa-heart"></i>
-</div>
-*/
 .heart {
   height: 0;
 }
@@ -172,10 +142,13 @@ a:active {
   position: relative;
   left: 309px;
   bottom: 34px;
-  transition-duration: 100ms;
-  transition-property: color;
   opacity: 0;
   z-index: 2;
+  transition: opacity 2s ease-in-out;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#ff79dA, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 .heart:hover .section__menu-logo {
   opacity: 1;
@@ -340,60 +313,6 @@ a:active {
   color: #FFFFFF;
 }
 
-/*.menu-item {
-    margin: 12px 13px 12px 12px;
-    padding: 12px 0px 12px 15px;
-    max-width: 634px;
-    height: 69px;
-    background: $color-background-primary;
-    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-    border-radius: 15.0431px;
-    cursor: pointer;
-
-    &__title {
-        font-family: $font-family-body;
-        font-weight: $font-weight-medium;
-        font-size: $font-size-paragraph;
-        line-height: $line-height-paragraph;
-        padding-bottom: 5px;
-
-
-        color: $color-primary;
-    }
-
-    &__details {
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-
-        &__description {
-            font-family: $font-family-body;
-            font-weight: $font-weight-light;
-            font-size: $font-size-xsmall;
-            line-height: $line-height-paragraph;
-            margin: 0;
-
-            color: $color-primary;
-        }
-
-        &__price {
-            font-family: $font-family-body;
-            font-weight: $font-weight-bold;
-            font-size: $font-size-xsmall;
-            line-height: $line-height-paragraph;
-            margin: 0;
-            padding-right: 15px;
-
-            color: $color-tertiary;
-        }
-    }
-
-    &:hover {
-        //A compléter 
-    }
-}
-
-*/
 .menu-item {
   margin: 12px 13px 12px 12px;
   padding: 12px 0px 12px 15px;
@@ -556,53 +475,6 @@ a:active {
   padding-left: 10px;
 }
 
-.footeri {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding: 30px 25px;
-  gap: 16px;
-  background: #353535;
-  height: 186px;
-  color: #FFFFFF;
-}
-.footeri__link-list {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 7px;
-}
-.footeri__logo {
-  font-family: "Shrikhand", italic, sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  position: relative;
-  top: 57px;
-  left: 1276px;
-  gap: 10px;
-}
-.footeri__link-icon {
-  width: 11px;
-  height: 13px;
-  padding-right: 18px;
-}
-
-/*<footer class="footer">
-
-    <div class="footer__logo">Ohmyfood</div>
-
-    <div class="footer__logo-container">
-        <ul class="footer__link-list">
-            <li><a href="#"><i class="footer__link-icon fas fa-map-marker-alt"></i> Proposer un restaurant</a></li>
-            <li><a href="#"><i class="footer__link-icon fas fa-map-marker-alt"></i> Devenir partenaire</a></li>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-</footer>*/
 .header {
   display: flex;
   justify-content: center;
@@ -633,33 +505,6 @@ a:active {
 
 .header__logo-title {
   padding-right: 57px;
-}
-
-.headerdesktop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 96px;
-  background: #FFFFFF;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-}
-.headerdesktop .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  font-family: "Shrikhand", italic, sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 40.82px;
-  text-align: center;
-  color: #101010;
-  padding-top: 14px;
-  padding-bottom: 5px;
-}
-.headerdesktop .icon {
-  padding-left: 20px;
 }
 
 .section {

@@ -36,45 +36,8 @@
 }
 
 //Header others pages 
-
 .header__logo-title{
   padding-right: 57px;
-}
-
-//HeaderDesktop
-.headerdesktop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 96px;
-  background: $color-background-primary;
-
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-
-    font-family: $font-family-title;
-    font-weight: $font-weight-normal;
-    font-size: $font-size-xlarge;
-    line-height: $line-height-large;
-
-    text-align: center;
-
-    color: $color-title;
-    padding-top: 14px;
-    padding-bottom: 5px;
-
-
-  }
-
-  .icon {
-    padding-left: 20px;
-  }
 }
 
 //Sous-header
