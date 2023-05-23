@@ -11,7 +11,6 @@ html {
 }
 
 body {
-  min-width: 320px;
   margin: 0 auto;
   padding: 0;
 }
@@ -332,11 +331,19 @@ a:active {
   line-height: 21.09px;
   padding-bottom: 5px;
   color: #000000;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-item__details {
   display: flex;
   justify-content: space-between;
   margin: 0;
+}
+.menu-item__details .menu-item__content {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-item__details__description {
   font-family: "Roboto", sans-serif;
@@ -345,6 +352,9 @@ a:active {
   line-height: 21.09px;
   margin: 0;
   color: #000000;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-item__details__price {
   font-family: "Roboto", sans-serif;
@@ -356,6 +366,9 @@ a:active {
   color: #353535;
   transform: translateX(0);
   transition: transform 250ms;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .menu-item__details .menu-item__confirmation {
   position: absolute;
@@ -375,7 +388,9 @@ a:active {
   transform: translateX(-100%);
 }
 .menu-item:hover .menu-item__details__price {
-  transform: translateX(-148%);
+  margin-right: 73px;
+  padding-right: 0px;
+  padding-left: 48px;
 }
 .menu-item .menu-item__confirmation-logo {
   font-size: 20px;

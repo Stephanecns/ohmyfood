@@ -18,12 +18,21 @@
       line-height: $line-height-paragraph;
       padding-bottom: 5px;
       color: $color-primary;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
   
     &__details {
       display: flex;
       justify-content: space-between;
       margin: 0;
+
+      .menu-item__content {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
   
       &__description {
         font-family: $font-family-body;
@@ -32,6 +41,9 @@
         line-height: $line-height-paragraph;
         margin: 0;
         color: $color-primary;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
       }
   
       &__price {
@@ -43,7 +55,10 @@
         padding-right: 15px;
         color: $color-tertiary;
         transform: translateX(0);
-        transition: transform 250ms
+        transition: transform 250ms;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
       }
   
       .menu-item__confirmation{
@@ -67,7 +82,9 @@
       }
 
       &:hover .menu-item__details__price{
-        transform: translateX(-148%);
+        margin-right: 73px;
+        padding-right: 0px;
+        padding-left: 48px;
     }
 
     .menu-item__confirmation-logo{
